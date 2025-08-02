@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siven's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+    </style>
+  </head>
+  <body>
+    <!-- Your body content remains unchanged and already well structured -->
+    <nav>
+      <div class="logo"><strong>Siven Portfolio</strong></div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="btns">
+        <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+        <button class="lang-btn" onclick="toggleLanguage()">🌐 Hindi</button>
+        <button onclick="speakWelcome()">Click to Talk</button>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-content">
+        <img
+          src="siven_in_front_.png-removebg-preview (1)-Photoroom.jpg"
+          alt="Siven Profile Picture"
+        />
+        <h1 id="hero-heading">Hello, I'm Siven</h1>
+        <p id="hero-text">
+          Frontend developer | HTML, CSS, JavaScript, react, basic figma design
+        </p>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <h2 id="about-title">About Me</h2>
+      <p id="about-text">
+        I am a self-taught <b>frontend developer</b> who loves building
+        responsive and user-friendly websites. Currently, I am pursuing a
+        <b>diploma in the ICT branch</b>, which combines Electrical and IT. I'm
+        also learning how to create unique websites using
+        <b>Artificial Intelligence</b> tools to enhance user experiences. Right
+        now, I'm focused on learning <b>JavaScript</b> to build more interactive
+        UIs.
+      </p>
+    </section>
+
+    <!-- Skills Section with Scroll Animation and Icons -->
+    <section class="skills scroll-animate" id="skills">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <div class="skill">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png"
+            alt="HTML5"
+            width="40"
+          />
+          <div>HTML5</div>
+        </div>
+        <div class="skill">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+            alt="CSS3"
+            width="40"
+          />
+          <div>CSS3</div>
+        </div>
+        <div class="skill">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+            alt="JavaScript"
+            width="40"
+          />
+          <div>JavaScript</div>
+        </div>
+        <div class="skill">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/867/867874.png"
+            alt="Responsive"
+            width="40"
+          />
+          <div>Responsive Design</div>
+        </div>
+        <div class="skill">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968706.png"
+            alt="React"
+            width="40"
+          />
+          <div>React JS</div>
+        </div>
+        <div class="skill">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"
+            alt="Figma"
+            width="40"
+          />
+          <div>Figma</div>
+        </div>
+      </div>
+    </section>
+
+<!-- Projects Section with Slider Animation -->
+<section class="projects scroll-animate" id="projects">
+  <h2>Projects</h2>
+  <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; font-size: 1rem;">
+    Below are some of the real-world and clone websites I created to sharpen my frontend development skills using
+    <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. These projects include creative UI,
+    responsiveness, and modern design principles. From cloning global brands like <strong>Apple</strong> and
+    <strong>Amazon</strong>, to designing local business pages like a <strong>Coffee Shop</strong> and a
+    <strong>PG Home</strong>, each project helped me understand layout techniques, animation, and user experience.
+  </p>
+  <div class="project-grid">
+    <div class="project animate__animated animate__fadeInLeft">
+      <img src="figma-apple-website-clone-template_1638243662.jpg" alt="Project 1" style="width:100%; border-radius:6px;" />
+      <h3>APPLE CLONE</h3>
+      <p>A modern clone of the Apple website featuring sleek design, hero sections, and product displays using HTML, CSS & JavaScript.</p>
+    </div>
+    <div class="project animate__animated animate__fadeInUp">
+      <img src="download.jpeg" alt="Project 2" style="width:100%; border-radius:6px;" />
+      <h3>COFFEE SHOP WEB</h3>
+      <p>A stylish landing page for a coffee shop, focused on typography, visuals, and mobile responsiveness.</p>
+    </div>
+    <div class="project animate__animated animate__fadeInDown">
+      <img src="download (1).jpeg" alt="Project 3" style="width:100%; border-radius:6px;" />
+      <h3>PG HOME CLONE WEB</h3>
+      <p>A clean and informative PG rental platform clone with sections for listings, testimonials, and contact forms.</p>
+    </div>
+    <div class="project animate__animated animate__fadeInRight">
+      <img src="download (2).jpeg" alt="Project 4" style="width:100%; border-radius:6px;" />
+      <h3>AMAZON WEB CLONE</h3>
+      <p>A responsive clone of the Amazon homepage, featuring product grids, navigation bar, and promotional sections.</p>
+    </div>
+  </div>
+</section>
+
+
+    <section class="education container" id="education">
+      <h2>My Education</h2>
+      <div class="skill-list">
+        <div class="skill">
+          <a href="https://www.justdial.com/Surat/Galaxy-Army-International-School-Near-Karmayogi-Society-2-Pandesara/0261PX261-X261-170925054550-C6Z9_BZDET">          <img
+            src="galxysunrys-removebg-preview.png"
+            height="100"
+            alt="School Photo"
+          /></a>
+          <h3>High School</h3>
+          <p>sunrays high school<br />Percentage: 79.2%</p>
+        </div>
+        <div class="skill">
+          <a href="https://www.gtu.ac.in/">          <img 
+           src="gtu_logo-removebg-preview.png"
+            height="200"
+            alt="College Photo"
+          /></a>
+          <h3>Diploma College</h3>
+          <p>Gujarat Technological University<br />sem1: 8.6 SPI</p>
+        </div>
+      </div>
+    </section>
+    <!-- 🔹 Simple Floating Chatbot -->
+    <div
+      id="chatbot-icon"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        font-size: 1.5rem;
+      "
+    >
+      💬
+    </div>
+
+    <div
+      id="chatbot-box"
+      style="
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        width: 300px;
+        max-height: 400px;
+        background: white;
+        color: #333;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        display: none;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 9999;
+        font-family: 'Poppins', sans-serif;
+      "
+    >
+      <div
+        style="
+          background: #007bff;
+          color: white;
+          padding: 10px;
+          font-weight: bold;
+        "
+      >
+        👨‍💻 Ask Me Anything
+      </div>
+      <div
+        id="chat-content"
+        style="
+          padding: 10px;
+          font-size: 14px;
+          line-height: 1.4;
+          overflow-y: auto;
+          max-height: 300px;
+        "
+      >
+        <p>Hi! I'm Sahil's assistant 🤖</p>
+        <p><strong>👤 Name:</strong> Sahil</p>
+        <p>
+          <strong>🎓 Education:</strong><br />- High School: 85%<br />- Diploma:
+          78%
+        </p>
+        <p>
+          <strong>💻 Skills:</strong><br />HTML5, CSS3, JavaScript (Basic),
+          Responsive Design
+        </p>
+        <p><strong>📍 Location:</strong> India</p>
+        <p>Feel free to explore the website to learn more!</p>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2025 MyPortfolio. Made by Sahil</p>
+      <div class="social-icons">
+        <a href="https://github.com/siven-kanojiya-2025"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/siven1126/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/siven-kanojiya-25b387373/"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        <a href="https://www.google.com">Our Website</a>
+      </div>
+    </footer>
+
+    <script>
+      function speakWelcome() {
+        const welcome = new SpeechSynthesisUtterance(
+          "Welcome to my portfolio! the digital space of Siven! A passionate frontend developer exploring the web one line of code at a time."
+        );
+        window.speechSynthesis.speak(welcome);
+      }
+      const canvas = document.getElementById("heroCanvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const circles = [];
+      const colors = ["#00aaff", "#00ffaa", "#ffaa00", "#ff00aa", "#aa00ff"];
+
+      for (let i = 0; i < 50; i++) {
+        circles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 4 + 2,
+          dx: (Math.random() - 0.5) * 1.5,
+          dy: (Math.random() - 0.5) * 1.5,
+          color: colors[Math.floor(Math.random() * colors.length)],
+        });
+      }
+
+      function animateCircles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let c of circles) {
+          ctx.beginPath();
+          ctx.arc(c.x, c.y, c.r, 0, Math.PI * 2);
+          ctx.fillStyle = c.color;
+          ctx.fill();
+          c.x += c.dx;
+          c.y += c.dy;
+          if (c.x < 0 || c.x > canvas.width) c.dx *= -1;
+          if (c.y < 0 || c.y > canvas.height) c.dy *= -1;
+        }
+        requestAnimationFrame(animateCircles);
+      }
+      animateCircles();
+
+      window.addEventListener("resize", () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark");
+      }
+
+      let isHindi = true;
+      function toggleLanguage() {
+        isHindi = !isHindi;
+        document.getElementById("hero-heading").textContent = isHindi
+          ? "Hello, I'm Sahil"
+          : "नमस्ते, मैं साहिल हूँ";
+        document.getElementById("hero-text").textContent = isHindi
+          ? "Frontend developer | HTML, CSS, JavaScript sikh raha hoon"
+          : "फ्रंटएंड डेवलपर | HTML, CSS, JavaScript सीख रहा हूँ";
+        document.getElementById("about-title").textContent = isHindi
+          ? "About Me"
+          : "मेरे बारे में";
+        document.getElementById("about-text").textContent = isHindi
+          ? "Main ek self-taught frontend developer hoon. Mujhe responsive aur user-friendly websites banana pasand hai. Abhi JavaScript seekh raha hoon taaki interactive UI bana saku."
+          : "मैं एक सेल्फ-टॉर्ट फ्रंटएंड डेवेलपर हूँ। मुझे responsive और user-friendly वेबसाइट्स बनाना पसंद है। अभी मैं JavaScript सीख रहा हूँ ताकि इंटरएक्टिव UI बना सकूं।";
+        document.querySelector(".lang-btn").textContent = isHindi
+          ? "🌐 Hindi"
+          : "🌐 English";
+      }
+      const chatbotIcon = document.getElementById("chatbot-icon");
+      const chatbotBox = document.getElementById("chatbot-box");
+
+      chatbotIcon.addEventListener("click", () => {
+        chatbotBox.style.display =
+          chatbotBox.style.display === "flex" ? "none" : "flex";
+      });
+      // Animate .scroll-animate when in viewport
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll(".scroll-animate");
+        for (let el of reveals) {
+          const windowHeight = window.innerHeight;
+          const elementTop = el.getBoundingClientRect().top;
+          const revealPoint = 150;
+
+          if (elementTop < windowHeight - revealPoint) {
+            el.classList.add("visible");
+          }
+        }
+      }
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll(); // Trigger once on load
+      // Page load fade-in effect
+      window.addEventListener("load", () => {
+        const loadFadeElements = document.querySelectorAll(".fade-in-load");
+        loadFadeElements.forEach((el, i) => {
+          setTimeout(() => {
+            el.classList.add("visible");
+          }, i * 200); // stagger animation
+        });
+      });
+    </script>
+  </body>
+</html>
